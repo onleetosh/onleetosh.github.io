@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+  <title>Top Tracks</title>
+  <meta charset="utf-8">
+  <meta name="description" content="top tracks api data">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' rel="stylesheet">
+  <link href="https://unpkg.com/vuetify/dist/vuetify.min.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+
+<body>
+
+    <div class="topnav">
+     <a class="active" href="index.html">Home Page</a>
+    </div>
+
+    <div id="head">
+        <v-app dark> 
+        <v-toolbar class="red"> 
+            <v-toolbar-title v-text="title"> </v-toolbar-title>
+        </v-toolbar>
+        <v-layout column align-center class="white--text">
+        <div id="result"> </div>
+        </v-layout>
+     </div>
+
+<script src="toptracks.js"></script>
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<script src="https://unpkg.com/vuetify/dist/vuetify.js"></script>
+
+<script>
+    new Vue({
+        el: '#head',
+            data () {
+                return {
+                    title: ' TRACKS: TOP 50 (LAST.FM) '
+                        }
+                    }
+            })
+</script>
+                     
+
+
+
+</body>
+
+</html>

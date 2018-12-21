@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+  <title>Music Life</title>
+  <meta charset="utf-8">
+  <meta name="description" content="music page">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' rel="stylesheet">
+  <link href="https://unpkg.com/vuetify/dist/vuetify.min.css" rel="stylesheet">
+</head>
+
+<body>
+ <div id="head">
+   <v-app dark>
+    <v-toolbar class="red"> 
+      <v-toolbar-title v-text="title"></v-toolbar-title>
+    </v-toolbar>
+
+    <v-content>
+      <section>
+        <v-layout column wrap class="my-4" align-center >
+        <img src="music.jpg" class="justify-center" >
+          <v-flex xl12 xl4 class="my-1">
+            <div class="text-xs-center">
+              <h2 class="headline"> Inspired by the love of music.</h2>
+            </div>
+          </v-flex>
+
+          <v-flex xs12>
+            <v-container grid-list-xl>
+              <v-layout row wrap align-center>
+                <v-flex xs12 md4>
+                  <v-card class="elevation-3 ">
+                    <v-card-text class="text-xs-center">
+                      <v-icon x-large class="green--text text--dark-2">flash_on</v-icon>
+                    </v-card-text>
+                    <v-card-title primary-title class="layout justify-center">
+                      <div class="headline text-xl-center"> TOP ARTIST </div>
+                    </v-card-title>
+                    <v-card-text>
+                        Discover a new artist. Hit [ <a href="topartist.html" target="blank"> ARTIST</a> ] to see which artists bring the heat. 
+                    </v-card-text>
+                  </v-card>
+                </v-flex>
+
+                <v-flex xs12 md4>
+                  <v-card class="elevation-3 ">
+                    <v-card-text class="text-xs-center">
+                      <v-icon x-large class="green--text text--dark-2">music_note</v-icon>
+                    </v-card-text>
+                    <v-card-title primary-title class="layout justify-center">
+                      <div class="headline text-xl-center">TOP TRACKS</div>
+                    </v-card-title>
+                    <v-card-text>
+                        Need a fire track too vibe too? Hit [ <a href="toptracks.html" target="blank"> TRACK</a> ] to see which artists are dropping bombs. 
+                    </v-card-text>
+                  </v-card>
+                </v-flex>
+
+                <v-flex xs12 md4>
+                  <v-card class="elevation-3 ">
+                    <v-card-text class="text-xs-center">
+                      <v-icon x-large class="green--text text--dark-2">place</v-icon>
+                    </v-card-text>
+                    <v-card-title primary-title class="layout justify-center">
+                      <div class="headline text-xl-center"> TOP TAGS </div>
+                    </v-card-title>
+                    <v-card-text>
+                    Popular gerne tags used by users. HIT [ <a href="toptags.html" target="blank"> TAGS</a> ] to learn which music gernes are most poppin'. 
+
+                    </v-card-text>
+                  </v-card>
+                </v-flex>
+              </v-layout>
+            </v-container>
+          </v-flex>
+        </v-layout>
+      </section>
+
+
+      <v-footer class="red dark-1">
+          <v-flex xs12>
+            <div class="white--text ml-3">
+                data requested from LAST.FM api | The world's largest online music service       
+            </v-flex>
+      </v-footer>
+    </v-content>
+  </v-app>
+ </div>
+
+
+ <script src="https://unpkg.com/vue/dist/vue.js"></script>
+ <script src="https://unpkg.com/vuetify/dist/vuetify.js"></script>
+
+ <script>
+   new Vue({
+    el: '#head',
+    data () {
+      return {
+        title: 'MUSIC LIFE'
+      }
+    }
+  })
+ </script>
+
+
+ 
+</body>
+</html>
